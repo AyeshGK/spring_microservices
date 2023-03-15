@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: customer
+  datasource:
+    username: noctus
+    url: jdbc:postgresql://localhost:5432/customer
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
