@@ -14,6 +14,10 @@
     <url>https://ayeshgk.github.io/</url>
     <modules>
         <module>customer</module>
+        <module>fraud</module>
+        <module>eureka-server</module>
+        <module>clients</module>
+
     </modules>
 
     <properties>
@@ -22,6 +26,7 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <spring.boot.maven.plugin.version>3.0.4</spring.boot.maven.plugin.version>
         <spring.boot.maven.dependencies.version>3.0.4</spring.boot.maven.dependencies.version>
+        <spring.cloud-version>2022.0.0</spring.cloud-version>
     </properties>
 
     <dependencyManagement>
@@ -32,6 +37,13 @@
                 <version>${spring.boot.maven.dependencies.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -45,6 +57,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>4.0.1</version>
         </dependency>
     </dependencies>
 
