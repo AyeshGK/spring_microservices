@@ -1,0 +1,6 @@
+com\noctus\clients\fraud\FraudClient.class
+com\noctus\clients\notification\NotificationRequest$NotificationRequestBuilder.class
+com\noctus\clients\fraud\FraudCheckResponse.class
+com\noctus\clients\notification\NotificationClient.class
+com\noctus\clients\notification\NotificationRequest.class
+com\noctus\clients\fraud\FraudCheckResponse$FraudCheckResponseBuilder.class
