@@ -1,8 +1,0 @@
-com\noctus\Notification.class
-com\noctus\NotificationController.class
-com\noctus\NotificationRepository.class
-com\noctus\Notification$NotificationBuilder.class
-com\noctus\NotificationService.class
-com\noctus\rabbitmq\NotificationConsumer.class
-com\noctus\NotificationApplication.class
-com\noctus\NotificationConfig.class
